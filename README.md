@@ -22,14 +22,25 @@ Note that the Leap may consume a full single CPU (on Linux) when interaction in 
 ###Starting and stopping
 To launch, on Linux, change directory into the cloned repo, and run `start.sh`. For other platform clone and tweak this script to match your OS
 
-###Usage
-Operation is as follows:
-One hand in frame: The tilt of this hand moves the mouse.
-Two hands in frame: Left hand controls action.
-    All fingers closed: Mouse movement with right hand tilt.
-    One finger open: Clicking. Left mouse button is down. Mouse movement with right hand tilt.
-    Two fingers open: Scrolling. Scrolling with right hand movement.
-This is a somewhat unintuitive method of operation, but I find that it gives exceptionally better control than the most obvious "point-at-screen" method of mouse control. With this two-handed tilt based mode, it is easy to hit and properly engage small buttons, scroll through webpages, etc.
+#Usage
+
+There's too modes of usage you can alternatve between. The share the basic tilt approach.
+
+### One hand in frame 
+The tilt of this single hand moves the mouse.
+
+### Two hands in frame
+
+
+Same as before, but now the left hand varies the action type as follows:
+* __Fist__                
+Mouse movement with right hand tilt.
+* __One finger open__              
+Mouse left-button clicking. 
+* __Two fingers or more open__                 
+Scrolling with right hand tilt.
+ 
+This is a somewhat unintuitive method of operation, but I beleive it gives exceptionally better control than the most obvious "point-at-screen" method of mouse control and makes for better ergonomics. 
 
 ###Usage with Motion Mode (python PyLeapMouse.py --motion):
 Movements are associated with commands listed in a file `commands.ini` placed at the root folder. Here is an example of what the file should look like :
