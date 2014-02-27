@@ -7,6 +7,7 @@
 *.wpr
 *.wpu
 *~
+*.so
 
 #files
 Leap.py
