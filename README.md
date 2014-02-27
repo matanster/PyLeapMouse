@@ -7,6 +7,9 @@ Works with Linux, OS X and Windows, but this fork is only tested for Linux. I tr
 ###Small word of advice for making changes to the code:
 For making changes, see https://github.com/matanster/PyLeapMouse/blob/master/PalmControl.py for starters.
 
+###Performance impact
+Note that the Leap may consume a full single CPU (on Linux) when interaction in its sensed cube area is anywhere above moderately intense. Surely you have more than a single CPU but it's nice to be aware of this impact.
+
 ###Setup 
 0. Download and install the Leap SDK for your platform
 1. Start the leap software 
