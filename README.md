@@ -1,7 +1,11 @@
 PyLeapMouse
 ===========
 
-wyager's Proof-of-concept code for a Leap Motion-based mouse controller. It now works with Linux, OS X and Windows.
+Forked from https://github.com/openleap/PyLeapMouse. See there for earlier inspirations. 
+Works with Linux, OS X and Windows, but this fork is only tested for Linux. 
+
+###Small word of advice for making changes to the code:
+For making changes, see https://github.com/matanster/PyLeapMouse/blob/master/PalmControl.py for starters.
 
 ###Setup 
 0. Download and install the Leap SDK for your platform
@@ -80,7 +84,3 @@ For every sample back in time, the previous location of the mouse is weighted wi
 So if smooth_falloff = 1.2, the current frame has weight 1/(1.2^0)=1, but the frame from 5 frames ago has weight 1/(1.2^5) = .4
 By default, the smooth aggressiveness is 8 frames with a falloff of 1.3.
 
-###TODO:
-Add proper relative mouse movement. Should be pretty easy on Windows, not sure how to do so on OS X.
-Add multiple monitor support for absolute mouse mode (and OS X's pseudo-relative mode).
-Use PyUserInput for all mouse input? Or use Xlib directly for Linux?
