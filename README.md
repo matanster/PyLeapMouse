@@ -3,23 +3,18 @@ PyLeapMouse
 
 wyager's Proof-of-concept code for a Leap Motion-based mouse controller. It now works with Linux, OS X and Windows.
 
-The most recent version is on Github at github.com/openleap/pyleapmouse.
+###Setup 
+0. Download and install the Leap SDK for your platform
+1. Start the leap software 
+2. Clone this repo
+3. Plug in your Leap, test that it seems well calibrated using it's Diagnostic Visualizer menu option
+3. WINDOWS USERS: You must copy the Leap.py file and all required library files (.libs and .dlls) from your Leap SDK folder to the "Windows" folder of this repo. These files are already included for OS X users, because OS X is 64-bit only.
+4. LINUX USERS: You must copy the Leap.py file and all required library files (.sos) from your Leap SDK folder to the "Linux" folder of this repo (same reason as for Windows); alternatively, add the directory (or directories) containing them to your PYTHONPATH. Additionally, you must have the PyUserInput and Xlib Python modules installed.
 
-###Configuration:
-1. Launch the Leap app (if not launched already) and plug in your Leap
-2. If you have not done so already, Configure your Leap screen from the Leap menu.
-3. WINDOWS USERS: You must copy the Leap.py file and all required library files (.libs and .dlls) from your Leap SDK folder to the "Windows" folder. These files are already included for OS X users, because OS X is 64-bit only.
-4. LINUX USERS: You must copy the Leap.py file and all required library files (.sos) from your Leap SDK folder to the "Linux" folder (same reason as for Windows); alternatively, add the directory (or directories) containing them to your PYTHONPATH. Additionally, you must have the PyUserInput and Xlib Python modules installed.
-5. `cd` to the directory all this stuff is in and run `python PyLeapMouse.py` (minus quotes) or just double-click PyLeapMouse.py if you have your computer configured to launch .py files.
-6. Launch with the --palm argument to run in palm mode (with much more accurate two-handed control).
+###Starting and stopping
+6. On Linux, launch by running `start.sh`. For other platform clone and tweak this script to match your OS.
 
-###Usage with Finger Mode (python PyLeapMouse.py --finger) (default):
-1. Insert your hand into frame.
-2. The forwardmost finger that the program detects is the mouse finger. Where it points, the cursor goes.
-3. Stick your thumb out (see note) to click down, and fold your thumb in to click up.
-4. Using two pointer fingers (e.g. index and middle) goes into scroll mode, which is not very intuitive but shows how it might work. The fingertips must be within a short distance of each other to activate scroll mode.
-
-###Usage with Palm Mode (python PyLeapMouse.py --palm):
+###Usage
 Operation is as follows:
 One hand in frame: The tilt of this hand moves the mouse.
 Two hands in frame: Left hand controls action.
