@@ -2,7 +2,7 @@ PyLeapMouse
 ===========
 
 Forked from https://github.com/openleap/PyLeapMouse. See there for earlier inspirations. 
-Works with Linux, OS X and Windows, but this fork is only tested for Linux. 
+Works with Linux, OS X and Windows, but this fork is only tested for Linux. I tried improving the setup instructions but admittedly they're still a bit vague for newbs. If you'd like to add more specific details (that are still generic) please let me know.
 
 ###Small word of advice for making changes to the code:
 For making changes, see https://github.com/matanster/PyLeapMouse/blob/master/PalmControl.py for starters.
