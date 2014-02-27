@@ -83,5 +83,5 @@ class Palm_Control_Listener(Leap.Listener):  #The Listener that we attach to the
 
     def convert_angles_to_mouse_velocity(self, roll, pitch):  #Angles are in radians
         x_movement = 5.0*math.copysign((4.0*math.sin(roll) + 2.0*roll)*math.sin(roll), roll)
-        y_movement = 5.0*math.copysign((4.0*math.sin(pitch) + 2.0*pitch)*math.sin(pitch), pitch)
+        y_movement = -5.0*math.copysign((4.0*math.sin(pitch) + 2.0*pitch)*math.sin(pitch), pitch)
         return (x_movement, y_movement)
