@@ -16,8 +16,8 @@ Note that the Leap may consume a full single CPU (on Linux) when interaction in 
 2. Clone this repo
 3. Plug in your Leap, test that it seems well calibrated using it's Diagnostic Visualizer menu option
 3. WINDOWS USERS: You must copy the Leap.py file and all required library files (.libs and .dlls) from your Leap SDK folder to the "Windows" folder of this repo. These files are already included for OS X users, because OS X is 64-bit only.
-4. LINUX USERS: You must copy the Leap.py file and all required library files (.sos) from your Leap SDK folder to the "Linux" folder of this repo (same reason as for Windows); alternatively, add the directory (or directories) containing them to your PYTHONPATH. Additionally, you must have the PyUserInput and Xlib Python modules installed.
-
+4. LINUX USERS: You must copy the Leap.py file and all required library files (.sos) from your Leap SDK folder to the "Linux" folder of this repo (same reason as for Windows); alternatively, add the directory (or directories) containing them to your PYTHONPATH. 
+5. You must have the PyUserInput and Xlib Python modules installed. A google search will get you there..
 ###Starting and stopping
 6. On Linux, launch by running `start.sh`. For other platform clone and tweak this script to match your OS.
 
